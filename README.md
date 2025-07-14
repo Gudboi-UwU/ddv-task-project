@@ -79,7 +79,7 @@ docker compose up -d db
 ### 5. Create table in PostgreSQL
 
 ```bash
-type scripts\init_db.sql | docker exec -i postgres_container psql -U user -d transactions_db
+type scripts\init_db.sql | docker exec -i postgres_container psql -U user -d transactions
 ```
 
 ---
