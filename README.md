@@ -102,16 +102,16 @@ docker compose up -d api
 
 ## 📌 Endpoints
 
-### 📍 `/city-summary`
+### 📍 `/summary/city`
 - Ringkasan jumlah & rata-rata transaksi berdasarkan kota
 
-### 📍 `/merchant-summary`
+### 📍 `/summary/merchant`
 - Ringkasan jumlah transaksi & rata-rata transaksi berdasarkan merchant
 
-### 📍 `/monthly-merchant-summary`
+### 📍 `/summary/monthly-merchant`
 - Total transaksi tiap bulan per merchant
 
-### 📍 `/monthly-cumulative`
+### 📍 `/summary/monthly-cumulative`
 - Jumlah transaksi yang terus bertambah setiap bulan per merchant
 
 ---
