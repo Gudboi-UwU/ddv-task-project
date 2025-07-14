@@ -22,19 +22,22 @@ Project FastAPI dengan PostgreSQL yang dijalankan menggunakan Docker
 
 ## 📁 Project Structure
 ```
-fastapi-task/
+ddv-task-project/
 ├── app/                  # Kode utama API
+│   ├── __init__.py       
 │   ├── crud.py           # Fungsi-fungsi CRUD dari database
 │   ├── database.py       # Koneksi ke database
 │   ├── main.py           # Start Point
 │   ├── models.py         # Struktur tabel database
 │   └── schemas.py        # Format data untuk keluar masuk API
 │
-├── scripts/
-│   ├── init_db.sql       # Perintah SQL untuk membuat tabel
-│   └── import_csv.py     # Program untuk mengimpor data dari CSV ke PostgreSQL
+├── data/
+│   ├── transaction_history.csv   #sumber data dalam bentuk csv
 │
-├── transaction_history.csv   # File sumber (CSV)
+├── scripts/
+│   ├── import_csv.py     # Program untuk mengimpor data dari CSV ke PostgreSQL
+│   └── init_db.sql       # Perintah SQL untuk membuat tabel
+│
 ├── Dockerfile            # Perintah membangun image API
 ├── docker-compose.yml    # Jalankan semua layanan sekaligus
 ├── .env.example          # Template env
