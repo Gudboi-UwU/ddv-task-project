@@ -54,7 +54,7 @@ fastapi-task/
 
 ```bash
 git clone https://github.com/Gudboi-UwU/ddv-task-project.git
-cd fastapi-task
+cd ddv-task-project
 ```
 
 ---
@@ -76,7 +76,7 @@ docker compose up -d db
 
 ---
 
-### 5. Create table in PostgreSAQL
+### 5. Create table in PostgreSQL
 
 ```bash
 type scripts\init_db.sql | docker exec -i postgres_container psql -U user -d transactions_db
