@@ -18,7 +18,7 @@ DATABASE_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{DB_HOST}:{DB_
 engine = create_engine(DATABASE_URL)
 
 # Baca CSV dan insert ke DB
-df = pd.read_csv("scripts/transaction_history.csv", parse_dates=["transaction_date"])
+df = pd.read_csv("data/transaction_history.csv", parse_dates=["transaction_date"])
 df.to_sql("transactions", engine, if_exists="append", index=False)
 
 print("Data imported successfully!")
