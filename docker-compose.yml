@@ -36,7 +36,7 @@ services:
     depends_on:
       - db
     env_file:
-      - .env   # 👈 gunakan env dari file saat build container
+      - .env  
 
   importer:
     build: .
@@ -44,6 +44,8 @@ services:
     command: python scripts/import_csv.py
     depends_on:
       - db
+    volumes:
+      - .:/code
 
 volumes:
   pgdata:
